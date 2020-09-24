@@ -5,18 +5,32 @@ const domain = 'https://api.openbrewerydb.org/breweries'
 //To get the info from the search
 const input = document.querySelector(`#blank`)//keyword input box
 const submit = document.querySelector(`#search`)// keyword submit button
+const inputCity = document.querySelector(`#city-search`)//city input box
+const inputState = document.querySelector(`#state-search`)//state input box
+const cityStateSubmit = document.querySelector(`#submit`)//city & state submit button
 
 submit.addEventListener('click', async ()=>{
+    
     let userInput = input.value
     const response = await axios.get(`${domain}/search?query=${userInput}&per_page=25`)
     console.log(response)
-    renderKeyword(response.data)
+    clearList()
+    renderList(response.data)
 })
 
+cityStateSubmit.addEventListener('click', async ()=>{
+
+    let city = inputCity.value
+    let state = inputState.value
+    const response = await axios.get(`${domain}?by_state=${state}&by_city=${city}&per_page=25`)
+    console.log(response)
+    clearList()
+    renderList(response.data)
+})
 
 const displayBrew = document.querySelector(".brewery-list")
 
-const renderKeyword = breweries =>{
+const renderList = breweries =>{
     console.log(breweries)
     breweries.forEach(brewery => {
         const brewList = document.createElement('div')
@@ -66,3 +80,10 @@ const renderKeyword = breweries =>{
     });
 
 }
+
+function clearList() {
+    // write code here
+    const clearElement = document.querySelector('.brewery-list')
+    while(clearElement.lastChild){
+      clearElement.removeChild(clearElement.lastChild)
+    }}
