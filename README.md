@@ -93,13 +93,13 @@ This schedule will be used to keep track of your progress throughout the week an
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| SetUp the API | H | 3hrs|  | |
-| Html SetUp | H | 1hrs|  |  |
-| Create the search function | H | 4hrs|  |  |
-| List the searches into a list | H | 6hrs|  |  |
-| Css | H | 5hrs|  |  |
-| PostMvp Stuff | l | 3hrs|  |  |
-| Total | H | 22hrs| hrs | hrs |
+| SetUp the API | H | 3hrs| 2hrs | 2hrs |
+| Html SetUp | H | 1hrs| 1hr | 1hr |
+| Create the search function | H | 4hrs| 5hrs | 5hrs |
+| List the searches into a list | H | 6hrs| 9hrs | 9hrs |
+| Css | H | 5hrs| 6hrs | 6hrs |
+| PostMvp Stuff | l | 3hrs| 2hrs | 2hrs |
+| Total | H | 22hrs| 25hrs | 25hrs |
 
 ## Code Snippet
 
