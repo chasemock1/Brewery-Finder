@@ -3,8 +3,8 @@ const domain = 'https://api.openbrewerydb.org/breweries'
 
 
 //To get the info from the search
-const input = document.querySelector(`#blank`)
-const submit = document.querySelector(`#search`)
+const input = document.querySelector(`#blank`)//keyword input box
+const submit = document.querySelector(`#search`)// keyword submit button
 
 submit.addEventListener('click', async ()=>{
     let userInput = input.value
@@ -22,9 +22,9 @@ const renderKeyword = breweries =>{
         const brewList = document.createElement('div')
         brewList.className = 'brew-list'
 
-        //gets and appends the name of the brewery
-        const brewName = document.createElement(`h3`)
-        brewName.innerHTMl = `Name: ${brewery.name}`
+        // gets and appends the name of the brewery
+        const brewName = document.createElement('h3')
+        brewName.innerHTML = `Name: ${brewery.name}`
         brewList.appendChild(brewName)
         console.log(brewName)
 
