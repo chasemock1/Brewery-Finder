@@ -9,7 +9,8 @@
 }
 body{
     background-color: black;
-    background-image: url("https://images.unsplash.com/photo-1586993451228-09818021e309?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=200&q=100");
+    background-image: url("https://images.unsplash.com/photo-1559526642-c3f001ea68ee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80");
+    background-size: 600px auto;
 }
 #list{
     display: flex;
@@ -26,6 +27,7 @@ body{
     color: black;
     order: 2;
     background-image: url("https://images.unsplash.com/photo-1518176258769-f227c798150e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=200&q=80");
+    background-size: 400px 300px;
 }
 p{
     display: flex;
@@ -42,15 +44,34 @@ h4{
     display: flex;
     justify-content: center;
     color: white;
+    font-style: italic;
 }
 #keyword-submit{
     text-align: center;
+    margin: 10px;
+    border: solid 3px white;
+    padding: 5px;
+    background-color: black;
 }
 #specific-submit{
 text-align: center;
 margin: 10px;
+border: solid 3px white;
+padding: 5px;
+background-color: black;
 }
-
+input{
+    background-color: black;
+    color: white;
+}
+button{
+    background-color: green;
+}
+#list{
+    color: white;
+    background-color: black;
+    border:solid 3px white ;
+}
 
 @media only screen and (min-width: 600px) {
 .brew-list{
