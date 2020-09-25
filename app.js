@@ -22,11 +22,11 @@ submit.addEventListener('click', async ()=>{
 
 //Submit event for the city and state
 cityStateSubmit.addEventListener('click', async ()=>{
+    clearList()
 
     let city = inputCity.value
     let state = inputState.value
     const response = await axios.get(`${domain}?by_state=${state}&by_city=${city}&per_page=25`)
-    clearList()
     renderList(response.data)
 })
 
@@ -34,7 +34,6 @@ const displayBrew = document.querySelector(".brewery-list")
 
 //Function to render the list of breweries and their data
 const renderList = breweries =>{
-    console.log(breweries)
     breweries.forEach(brewery => {
         const brewList = document.createElement('div')
         brewList.className = 'brew-list'
