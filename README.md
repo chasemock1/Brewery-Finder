@@ -2,7 +2,8 @@
 
 ## Project Name
 
-![Brewery Finder](https://chasemock1.github.io/Brewery-Finder/)
+Brewery Finder
+https://chasemock1.github.io/Brewery-Finder/
 
 ## Project Description
 
